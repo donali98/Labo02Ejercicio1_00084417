@@ -12,26 +12,41 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:orientation="vertical"
         android:layout_marginTop="100dp">
         <EditText
+            android:id="@+id/txt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
-            android:layout_marginBottom="25dp"/>
+            android:hint="@string/txt_user"
+            />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"/>
+            android:hint="@string/txt_password"
+            android:id="@+id/txt2"
+            android:layout_marginTop="15dp"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="45dp"
-            android:text="Click"
+            android:text="@string/txt_click"
             android:background="#4f965d"
-            android:id="@+id/btn1"/>
+            android:id="@+id/btn1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            android:id="@+id/txv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"/>
     </LinearLayout>
 
 </LinearLayout>
